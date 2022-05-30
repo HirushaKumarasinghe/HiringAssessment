@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli"
+      rel="stylesheet"
+    />
+    <title>Welcome email</title>
+
+    <style>
+      .IS_email_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .IS_email {
+        width: 100%;
+        max-width: 768px;
+        background-color: #f6f6f6;
+        padding: 50px 100px;
+        font-family: "muli";
+      }
+      .IS_email_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+      }
+      .IS_email_logo h1 {
+        color: #0abab5;
+        font-family: "sen";
+        margin-left: 25px;
+      }
+
+      .IS_email_body {
+        background-color: #ffffff;
+        padding: 30px 50px;
+      }
+      /* Footer */
+      .IS_email_footer {
+        padding: 50px 0px 0px 0px;
+      }
+
+      .IS_email_footer p {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 0px 45px;
+        text-align: center;
+        color: #919191;
+      }
+
+      .IS_email_footer .smIcons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .IS_email_footer .smIcons a {
+        height: 20px;
+        padding: 15px 8px;
+        text-decoration: none;
+      }
+      .IS_email_footer .smIcons a img {
+        height: 20px;
+      }
+
+      /* Dynamic Contents */
+      .IS_email_body {
+        /* width: 100%; */
+        padding: 30px 50px;
+      }
+      .IS_email_body h1 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 25px;
+        color: #606060;
+        font-weight: normal;
+      }
+      .IS_email_body p {
+        /* text-align: justify; */
+        font-size: 16px;
+        margin-bottom: 25px;
+        color: #606060;
+      }
+      .IS_email_body .lightP {
+        color: #c1c1c1;
+      }
+      .IS_email_body .btnLink {
+        text-decoration: none;
+        display: block;
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        color: #ffffff;
+        background-color: #0abab5;
+        padding: 12px 35px;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      /* Invoice new */
+      .mailTitle {
+        text-align: center;
+        font-family: "muli";
+        margin-bottom: 35px;
+      }
+
+      .mailTitle h1 {
+        color: #1f8502;
+        font-size: 27px;
+        margin-bottom: 15px;
+      }
+
+      .mailTitle h2 {
+        color: #333333;
+        font-size: 20px;
+        margin-bottom: 0px;
+      }
+
+      .mailSubtitle {
+        text-align: center;
+        font-family: "muli";
+        margin-bottom: 40px;
+      }
+
+      .mailSubtitle h1 {
+        color: #333333;
+        font-size: 25px;
+        margin-bottom: 8px;
+      }
+
+      .mailSubtitle h2 {
+        color: #a2a2a2;
+        font-size: 17px;
+        margin-bottom: 0px;
+      }
+      .mailSection {
+        font-family: "muli";
+        margin-bottom: 60px;
+      }
+
+      .mailSection .title h3 {
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .mailSection .title hr {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        border: solid 1px #dedddc;
+      }
+      .mailSection .body {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .mailSection .body .left h4 {
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 0px;
+      }
+      .mailSection .lightBorder {
+        border-bottom: solid 1px #dedddc;
+        padding-bottom: 20px;
+      }
+      .mailSection .darkBorder {
+        border-bottom: solid 1px #4b4b4b;
+        padding-bottom: 10px;
+      }
+
+      .mailSection .body .blue {
+        color: #007bff !important;
+      }
+
+      .mailSection .body .left p {
+        color: #4e4e4e;
+        font-size: 14px;
+        margin-top: 0px;
+      }
+
+      .mailSection .body .right {
+        text-align: right !important;
+      }
+
+      .mailSection .body .right h4 {
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        margin-top: 0px;
+      }
+
+      .mailSection .body .right p {
+        color: #4e4e4e;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 12px;
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="IS_email_wrapper">
+      <div class="IS_email">
+        <div class="IS_email_logo">
+          <img alt="" src="http://213.136.91.42:2000/is/logo.svg" />
+          <h1>Industry Seeker</h1>
+        </div>
+
+        <div class="IS_email_body">
+          <div class="mailSection">
+            <div class="title">
+              <h3>Package Info</h3>
+              <hr />
+            </div>
+
+            <div class="body">
+              <div class="left">
+                <h4>Business Package</h4>
+                <p>Industry Seeker Business package payment.</p>
+              </div>
+              <div class="right">
+                <h4>$34.99/mo</h4>
+              </div>
+            </div>
+
+            <div class="body lightBorder">
+              <div class="left">
+                <h4>Billing Cycle</h4>
+              </div>
+              <div class="right">
+                <h4>3 month</h4>
+              </div>
+            </div>
+
+            <div class="body darkBorder">
+              <div class="left">
+                <h4>Total</h4>
+              </div>
+              <div class="right">
+                <h4>$99.99 (USD)</h4>
+                <p>Payment ID : PAYID-L3IL4NA5PS84377GJ6924748</p>
+                <p>
+                  Via
+                  <span class="blue">
+                    Paypal
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mailSection">
+            <div class="title">
+              <h3>Billing Info</h3>
+              <hr />
+            </div>
+            <div class="body darkBorder">
+              <div class="left">
+                <h4>Billing To</h4>
+              </div>
+              <div class="right">
+                <h4>Devni Heraliyawala</h4>
+                <p>
+                  No:257/11,
+                  <br />
+                  Batadombathuduwa,
+                  <br />
+                  Alubomulla, Panadura
+                  <br />
+                  Sri Lanka (12500)
+                </p>
+                <p>
+                  devniheraliyawala314@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mailSection">
+            <div class="center darkBorder">
+              <a class="btnLink" href="https://industrySeeker.com">View My Account</a>
+              <br />
+              <br />
+              <h4>
+                Thank you for being a great customer
+              </h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="IS_email_footer">
+          <div class="smIcons">
+            <a target="_blank" href="https://instagram.com">
+              <img
+                alt=""
+                src="http://213.136.91.42:2000/is/instagram-brands.svg"
+              />
+            </a>
+            <a target="_blank" href="https://facebook.com">
+              <img
+                alt=""
+                src="http://213.136.91.42:2000/is/facebook-square-brands.svg"
+              />
+            </a>
+            <a target="_blank" href="https://twitter.com">
+              <img
+                alt=""
+                src="http://213.136.91.42:2000/is/twitter-square-brands.svg"
+              />
+            </a>
+            <a target="_blank" href="https://youtube.com">
+              <img
+                alt=""
+                src="http://213.136.91.42:2000/is/youtube-brands.svg"
+              />
+            </a>
+          </div>
+
+          <p>
+            This email was intended for (username), because you signed up for
+            Industry Seeker. The links in this email will always direct to
+            https://industry.com. © 2020 Yunly Thaiwan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
